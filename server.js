@@ -92,8 +92,19 @@ async function withBrowserPage(task) {
     const page = await browser.newPage({
       userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
     });
-    await page.goto("about:blank");
+    //from here
+    await page.setExtraHTTPHeaders({
+      "Accept-Language": "en-US,en;q=0.9"
+    });//new
+
+await page.setViewportSize({ width: 1280, height: 800 });
+    // await page.goto("about:blank");
+    await page.goto(url, {
+      waitUntil: "domcontentloaded",
+      timeout: 60000
+    });//new
     return await task(page);
+    
   } finally {
     await browser.close();
   }
