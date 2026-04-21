@@ -1,0 +1,4 @@
+node_modules/
+data/official-player-stats-cache.json
+.env
+.vercel

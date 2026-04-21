@@ -1,0 +1,4311 @@
+{
+  "Ruturaj Gaikwad": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 41,
+        "average": 13.67,
+        "strikeRate": 113.88,
+        "highest": 28,
+        "recentScores": [
+          24,
+          6,
+          14,
+          12,
+          19
+        ],
+        "fours": 3,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Dewald Brevis": {
+    "ipl": {
+      "matches": 16,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 157,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Sarfaraz Khan": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 99,
+        "average": 33,
+        "strikeRate": 202.04,
+        "highest": 50,
+        "recentScores": [
+          50,
+          25,
+          41,
+          31,
+          46
+        ],
+        "fours": 16,
+        "sixes": 4,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Matthew Short": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 2,
+        "average": 2,
+        "strikeRate": 28.57,
+        "highest": 2,
+        "recentScores": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "MS Dhoni": {
+    "ipl": {
+      "matches": 278,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 150,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Sanju Samson": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 22,
+        "average": 7.33,
+        "strikeRate": 115.78,
+        "highest": 9,
+        "recentScores": [
+          9,
+          4,
+          9,
+          9,
+          9
+        ],
+        "fours": 2,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Kartik Sharma": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 25,
+        "average": 8.33,
+        "strikeRate": 119.04,
+        "highest": 18,
+        "recentScores": [
+          18,
+          4,
+          12,
+          10,
+          17
+        ],
+        "fours": 0,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Urvil Patel": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Shivam Dube": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 69,
+        "average": 34.5,
+        "strikeRate": 156.81,
+        "highest": 45,
+        "recentScores": [
+          45,
+          27,
+          39,
+          33,
+          44
+        ],
+        "fours": 7,
+        "sixes": 3,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 15,
+        "bestWickets": 301,
+        "recentWickets": [
+          1,
+          0,
+          1,
+          0,
+          2
+        ],
+        "average": 30,
+        "strikeRate": 12
+      }
+    }
+  },
+  "Ayush Mhatre": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 74,
+        "average": 24.67,
+        "strikeRate": 157.44,
+        "highest": 73,
+        "recentScores": [
+          39,
+          17,
+          29,
+          23,
+          34
+        ],
+        "fours": 6,
+        "sixes": 5,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Jamie Overton": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 80,
+        "average": 80,
+        "strikeRate": 153.84,
+        "highest": 43,
+        "recentScores": [
+          43,
+          43,
+          43,
+          43,
+          43
+        ],
+        "fours": 6,
+        "sixes": 4,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 14,
+        "bestWickets": 421,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 56,
+        "strikeRate": 24
+      }
+    }
+  },
+  "Prashant Veer": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 49,
+        "average": 49,
+        "strikeRate": 136.11,
+        "highest": 43,
+        "recentScores": [
+          43,
+          41,
+          43,
+          43,
+          43
+        ],
+        "fours": 7,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Shreyas Gopal": {
+    "ipl": {
+      "matches": 12,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Noor Ahmad": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 9,
+        "average": 4.5,
+        "strikeRate": 52.94,
+        "highest": 8,
+        "recentScores": [
+          8,
+          4,
+          8,
+          8,
+          8
+        ],
+        "fours": 0,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Khaleel Ahmed": {
+    "ipl": {
+      "matches": 74,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Rahul Chahar": {
+    "ipl": {
+      "matches": 80,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Gurjapneet Singh": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Matt Henry": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 7,
+        "average": 3.5,
+        "strikeRate": 70,
+        "highest": 5,
+        "recentScores": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 2,
+        "economy": 13,
+        "bestWickets": 542,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 65,
+        "strikeRate": 30
+      }
+    }
+  },
+  "Anshul Kamboj": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 26,
+        "average": 26,
+        "strikeRate": 118.18,
+        "highest": 19,
+        "recentScores": [
+          19,
+          18,
+          19,
+          19,
+          19
+        ],
+        "fours": 2,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 5,
+        "economy": 11.43,
+        "bestWickets": 272,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 24.4,
+        "strikeRate": 12.8
+      }
+    }
+  },
+  "Mukesh Choudhary": {
+    "ipl": {
+      "matches": 16,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Quinton de Kock": {
+    "ipl": {
+      "matches": 115,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Robin Minz": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Ryan Rickelton": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 98,
+        "average": 32.67,
+        "strikeRate": 168.96,
+        "highest": 81,
+        "recentScores": [
+          47,
+          25,
+          37,
+          31,
+          42
+        ],
+        "fours": 6,
+        "sixes": 9,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Sherfane Rutherford": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 30,
+        "average": 15,
+        "strikeRate": 200,
+        "highest": 25,
+        "recentScores": [
+          25,
+          7,
+          23,
+          13,
+          25
+        ],
+        "fours": 3,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Rohit Sharma": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 118,
+        "average": 39.33,
+        "strikeRate": 168.57,
+        "highest": 78,
+        "recentScores": [
+          53,
+          31,
+          43,
+          37,
+          48
+        ],
+        "fours": 11,
+        "sixes": 7,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Suryakumar Yadav": {
+    "ipl": {
+      "matches": 169,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 147,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Hardik Pandya": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 27,
+        "average": 27,
+        "strikeRate": 158.82,
+        "highest": 18,
+        "recentScores": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ],
+        "fours": 5,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 11.2,
+        "bestWickets": 391,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 56,
+        "strikeRate": 30
+      }
+    }
+  },
+  "Corbin Bosch": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 11,
+        "average": 0,
+        "strikeRate": 275,
+        "highest": 11,
+        "recentScores": [
+          11,
+          4,
+          11,
+          10,
+          11
+        ],
+        "fours": 2,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 12.31,
+        "bestWickets": 391,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 39,
+        "strikeRate": 19
+      }
+    }
+  },
+  "Will Jacks": {
+    "ipl": {
+      "matches": 21,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Naman Dhir": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 58,
+        "average": 29,
+        "strikeRate": 161.11,
+        "highest": 28,
+        "recentScores": [
+          28,
+          21,
+          28,
+          27,
+          28
+        ],
+        "fours": 6,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Mitchell Santner": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 18,
+        "average": 0,
+        "strikeRate": 138.46,
+        "highest": 18,
+        "recentScores": [
+          18,
+          10,
+          18,
+          16,
+          18
+        ],
+        "fours": 2,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 7.33,
+        "bestWickets": 221,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 22,
+        "strikeRate": 18
+      }
+    }
+  },
+  "Tilak Varma": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 34,
+        "average": 11.33,
+        "strikeRate": 130.76,
+        "highest": 20,
+        "recentScores": [
+          20,
+          4,
+          12,
+          10,
+          17
+        ],
+        "fours": 6,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Ashwani Kumar": {
+    "ipl": {
+      "matches": 7,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Trent Boult": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 1,
+        "average": 1,
+        "strikeRate": 50,
+        "highest": 1,
+        "recentScores": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Jasprit Bumrah": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 5,
+        "average": 0,
+        "strikeRate": 250,
+        "highest": 5,
+        "recentScores": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Deepak Chahar": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 6,
+        "average": 0,
+        "strikeRate": 120,
+        "highest": 6,
+        "recentScores": [
+          6,
+          4,
+          6,
+          6,
+          6
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 10.5,
+        "bestWickets": 201,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 42,
+        "strikeRate": 24
+      }
+    }
+  },
+  "Mayank Markande": {
+    "ipl": {
+      "matches": 39,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Shardul Thakur": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 8,
+        "average": 8,
+        "strikeRate": 114.28,
+        "highest": 8,
+        "recentScores": [
+          8,
+          4,
+          8,
+          8,
+          8
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 4,
+        "economy": 12.88,
+        "bestWickets": 393,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 29,
+        "strikeRate": 13.5
+      }
+    }
+  },
+  "Rajat Patidar": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 79,
+        "average": 79,
+        "strikeRate": 254.83,
+        "highest": 48,
+        "recentScores": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "fours": 3,
+        "sixes": 9,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Jordan Cox": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Tim David": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 86,
+        "average": 0,
+        "strikeRate": 245.71,
+        "highest": 70,
+        "recentScores": [
+          61,
+          35,
+          51,
+          41,
+          56
+        ],
+        "fours": 4,
+        "sixes": 9,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Virat Kohli": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 97,
+        "average": 97,
+        "strikeRate": 173.21,
+        "highest": 69,
+        "recentScores": [
+          69,
+          69,
+          69,
+          69,
+          69
+        ],
+        "fours": 7,
+        "sixes": 6,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Devdutt Padikkal": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 111,
+        "average": 55.5,
+        "strikeRate": 201.81,
+        "highest": 61,
+        "recentScores": [
+          61,
+          48,
+          61,
+          54,
+          61
+        ],
+        "fours": 12,
+        "sixes": 6,
+        "fifties": 2,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Phil Salt": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 54,
+        "average": 27,
+        "strikeRate": 145.94,
+        "highest": 46,
+        "recentScores": [
+          37,
+          19,
+          27,
+          25,
+          32
+        ],
+        "fours": 5,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Jitesh Sharma": {
+    "ipl": {
+      "matches": 57,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 166,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Jacob Bethell": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 163,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Venkatesh Iyer": {
+    "ipl": {
+      "matches": 62,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Mangesh Yadav": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Krunal Pandya": {
+    "ipl": {
+      "matches": 2,
+      "batting": null,
+      "bowling": {
+        "wickets": 2,
+        "economy": 12.4,
+        "bestWickets": 362,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 31,
+        "strikeRate": 15
+      }
+    }
+  },
+  "Romario Shepherd": {
+    "ipl": {
+      "matches": 2,
+      "batting": null,
+      "bowling": {
+        "wickets": 3,
+        "economy": 14.6,
+        "bestWickets": 543,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 24.33,
+        "strikeRate": 10
+      }
+    }
+  },
+  "Jacob Duffy": {
+    "ipl": {
+      "matches": 2,
+      "batting": null,
+      "bowling": {
+        "wickets": 5,
+        "economy": 10,
+        "bestWickets": 223,
+        "recentWickets": [
+          4,
+          3,
+          4,
+          3,
+          5
+        ],
+        "average": 16,
+        "strikeRate": 9.6
+      }
+    }
+  },
+  "Josh Hazlewood": {
+    "ipl": {
+      "matches": 39,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Bhuvneshwar Kumar": {
+    "ipl": {
+      "matches": 2,
+      "batting": null,
+      "bowling": {
+        "wickets": 4,
+        "economy": 9,
+        "bestWickets": 413,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 18,
+        "strikeRate": 12
+      }
+    }
+  },
+  "Rasikh Salam": {
+    "ipl": {
+      "matches": 13,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Suyash Sharma": {
+    "ipl": {
+      "matches": 2,
+      "batting": null,
+      "bowling": {
+        "wickets": 2,
+        "economy": 7,
+        "bestWickets": 211,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 24.5,
+        "strikeRate": 21
+      }
+    }
+  },
+  "Swapnil Singh": {
+    "ipl": {
+      "matches": 14,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Nuwan Thushara": {
+    "ipl": {
+      "matches": 8,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Yash Dayal": {
+    "ipl": {
+      "matches": 43,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Ajinkya Rahane": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 124,
+        "average": 41.33,
+        "strikeRate": 155,
+        "highest": 67,
+        "recentScores": [
+          55,
+          33,
+          45,
+          39,
+          50
+        ],
+        "fours": 8,
+        "sixes": 7,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Finn Allen": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 80,
+        "average": 20,
+        "strikeRate": 205.12,
+        "highest": 37,
+        "recentScores": [
+          37,
+          12,
+          28,
+          18,
+          33
+        ],
+        "fours": 13,
+        "sixes": 4,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Manish Pandey": {
+    "ipl": {
+      "matches": 174,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 147,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Rovman Powell": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 39,
+        "average": 0,
+        "strikeRate": 162.5,
+        "highest": 39,
+        "recentScores": [
+          34,
+          12,
+          24,
+          18,
+          29
+        ],
+        "fours": 4,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Angkrish Raghuvanshi": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 155,
+        "average": 51.67,
+        "strikeRate": 158.16,
+        "highest": 52,
+        "recentScores": [
+          52,
+          44,
+          52,
+          50,
+          52
+        ],
+        "fours": 17,
+        "sixes": 6,
+        "fifties": 2,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Ramandeep Singh": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 14,
+        "average": 14,
+        "strikeRate": 107.69,
+        "highest": 10,
+        "recentScores": [
+          10,
+          6,
+          10,
+          10,
+          10
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Tim Seifert": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Rinku Singh": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 72,
+        "average": 36,
+        "strikeRate": 135.84,
+        "highest": 35,
+        "recentScores": [
+          35,
+          28,
+          35,
+          34,
+          35
+        ],
+        "fours": 8,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Cameron Green": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 56,
+        "average": 18.67,
+        "strikeRate": 147.36,
+        "highest": 32,
+        "recentScores": [
+          29,
+          11,
+          19,
+          17,
+          24
+        ],
+        "fours": 5,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 14,
+        "bestWickets": 281,
+        "recentWickets": [
+          1,
+          0,
+          1,
+          0,
+          2
+        ],
+        "average": 28,
+        "strikeRate": 12
+      }
+    }
+  },
+  "Sunil Narine": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 12,
+        "average": 12,
+        "strikeRate": 300,
+        "highest": 12,
+        "recentScores": [
+          12,
+          4,
+          12,
+          10,
+          12
+        ],
+        "fours": 0,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 2,
+        "economy": 7.45,
+        "bestWickets": 131,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 41,
+        "strikeRate": 33
+      }
+    }
+  },
+  "Rachin Ravindra": {
+    "ipl": {
+      "matches": 18,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Varun Chakravarthy": {
+    "ipl": {
+      "matches": 86,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Matheesha Pathirana": {
+    "ipl": {
+      "matches": 32,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Harshit Rana": {
+    "ipl": {
+      "matches": 32,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Akash Deep": {
+    "ipl": {
+      "matches": 34,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Vaibhav Arora": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 1,
+        "average": 0,
+        "strikeRate": 50,
+        "highest": 1,
+        "recentScores": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 5,
+        "economy": 11.41,
+        "bestWickets": 382,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 27.4,
+        "strikeRate": 14.4
+      }
+    }
+  },
+  "Kartik Tyagi": {
+    "ipl": {
+      "matches": 4,
+      "batting": {
+        "runs": 5,
+        "average": 5,
+        "strikeRate": 100,
+        "highest": 5,
+        "recentScores": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 3,
+        "economy": 11.09,
+        "bestWickets": 311,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 40.66,
+        "strikeRate": 22
+      }
+    }
+  },
+  "Umran Malik": {
+    "ipl": {
+      "matches": 26,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Travis Head": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 64,
+        "average": 21.33,
+        "strikeRate": 168.42,
+        "highest": 46,
+        "recentScores": [
+          35,
+          13,
+          25,
+          19,
+          30
+        ],
+        "fours": 9,
+        "sixes": 3,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Ishan Kishan": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 95,
+        "average": 31.67,
+        "strikeRate": 186.27,
+        "highest": 80,
+        "recentScores": [
+          50,
+          24,
+          40,
+          30,
+          45
+        ],
+        "fours": 11,
+        "sixes": 5,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Heinrich Klaasen": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 145,
+        "average": 48.33,
+        "strikeRate": 147.95,
+        "highest": 62,
+        "recentScores": [
+          58,
+          40,
+          48,
+          46,
+          53
+        ],
+        "fours": 11,
+        "sixes": 4,
+        "fifties": 2,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Abhishek Sharma": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 55,
+        "average": 18.33,
+        "strikeRate": 177.41,
+        "highest": 48,
+        "recentScores": [
+          36,
+          10,
+          26,
+          16,
+          31
+        ],
+        "fours": 4,
+        "sixes": 5,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Brydon Carse": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Liam Livingstone": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 14,
+        "average": 14,
+        "strikeRate": 70,
+        "highest": 14,
+        "recentScores": [
+          14,
+          6,
+          14,
+          12,
+          14
+        ],
+        "fours": 0,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Kamindu Mendis": {
+    "ipl": {
+      "matches": 5,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Nitish Kumar Reddy": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 96,
+        "average": 32,
+        "strikeRate": 152.38,
+        "highest": 56,
+        "recentScores": [
+          46,
+          24,
+          36,
+          30,
+          41
+        ],
+        "fours": 7,
+        "sixes": 6,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 2,
+        "economy": 10,
+        "bestWickets": 172,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 25,
+        "strikeRate": 15
+      }
+    }
+  },
+  "Shivam Mavi": {
+    "ipl": {
+      "matches": 32,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Pat Cummins": {
+    "ipl": {
+      "matches": 72,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Eshan Malinga": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 3,
+        "economy": 9.87,
+        "bestWickets": 142,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 26.33,
+        "strikeRate": 16
+      }
+    }
+  },
+  "Harshal Patel": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 4,
+        "average": 2,
+        "strikeRate": 100,
+        "highest": 4,
+        "recentScores": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Sakib Hussain": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Shivang Kumar": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 9,
+        "average": 4.5,
+        "strikeRate": 150,
+        "highest": 5,
+        "recentScores": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ],
+        "fours": 2,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 8.87,
+        "bestWickets": 301,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 71,
+        "strikeRate": 48
+      }
+    }
+  },
+  "Jaydev Unadkat": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 4,
+        "average": 0,
+        "strikeRate": 133.33,
+        "highest": 4,
+        "recentScores": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 4,
+        "economy": 10.16,
+        "bestWickets": 213,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 25,
+        "strikeRate": 14.75
+      }
+    }
+  },
+  "Zeeshan Ansari": {
+    "ipl": {
+      "matches": 10,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Shimron Hetmyer": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 24,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 18,
+        "recentScores": [
+          18,
+          16,
+          18,
+          18,
+          18
+        ],
+        "fours": 1,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Yashasvi Jaiswal": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 170,
+        "average": 170,
+        "strikeRate": 163.46,
+        "highest": 77,
+        "recentScores": [
+          77,
+          77,
+          77,
+          77,
+          77
+        ],
+        "fours": 19,
+        "sixes": 8,
+        "fifties": 2,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Dhruv Jurel": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 95,
+        "average": 31.67,
+        "strikeRate": 175.92,
+        "highest": 75,
+        "recentScores": [
+          50,
+          24,
+          40,
+          30,
+          45
+        ],
+        "fours": 9,
+        "sixes": 5,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Riyan Parag": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 42,
+        "average": 21,
+        "strikeRate": 168,
+        "highest": 20,
+        "recentScores": [
+          20,
+          13,
+          20,
+          19,
+          20
+        ],
+        "fours": 2,
+        "sixes": 4,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 11,
+        "bestWickets": 111,
+        "recentWickets": [
+          1,
+          0,
+          1,
+          0,
+          2
+        ],
+        "average": 11,
+        "strikeRate": 6
+      }
+    }
+  },
+  "Vaibhav Sooryavanshi": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 122,
+        "average": 40.67,
+        "strikeRate": 248.97,
+        "highest": 52,
+        "recentScores": [
+          52,
+          33,
+          49,
+          39,
+          52
+        ],
+        "fours": 10,
+        "sixes": 11,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Donovan Ferreira": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 1,
+        "average": 1,
+        "strikeRate": 33.33,
+        "highest": 1,
+        "recentScores": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Ravindra Jadeja": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 7,
+        "average": 0,
+        "strikeRate": 100,
+        "highest": 7,
+        "recentScores": [
+          7,
+          4,
+          7,
+          7,
+          7
+        ],
+        "fours": 1,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 2,
+        "economy": 8.6,
+        "bestWickets": 182,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 21.5,
+        "strikeRate": 15
+      }
+    }
+  },
+  "Jofra Archer": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 1,
+        "average": 0,
+        "strikeRate": 50,
+        "highest": 1,
+        "recentScores": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 3,
+        "economy": 7.4,
+        "bestWickets": 192,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 24.66,
+        "strikeRate": 20
+      }
+    }
+  },
+  "Nandre Burger": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 5,
+        "economy": 8.44,
+        "bestWickets": 212,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 15.2,
+        "strikeRate": 10.8
+      }
+    }
+  },
+  "Tushar Deshpande": {
+    "ipl": {
+      "matches": 2,
+      "batting": null,
+      "bowling": {
+        "wickets": 2,
+        "economy": 10.6,
+        "bestWickets": 241,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 26.5,
+        "strikeRate": 15
+      }
+    }
+  },
+  "Vignesh Puthur": {
+    "ipl": {
+      "matches": 5,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Ravi Bishnoi": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 7,
+        "economy": 9.11,
+        "bestWickets": 414,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 11.71,
+        "strikeRate": 7.71
+      }
+    }
+  },
+  "Sandeep Sharma": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 3,
+        "economy": 9.46,
+        "bestWickets": 262,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 27.33,
+        "strikeRate": 17.33
+      }
+    }
+  },
+  "Kuldeep Sen": {
+    "ipl": {
+      "matches": 12,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Yudhvir Singh": {
+    "ipl": {
+      "matches": 9,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Shubman Gill": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 109,
+        "average": 54.5,
+        "strikeRate": 151.38,
+        "highest": 70,
+        "recentScores": [
+          69,
+          47,
+          59,
+          53,
+          64
+        ],
+        "fours": 10,
+        "sixes": 5,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Anuj Rawat": {
+    "ipl": {
+      "matches": 24,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 150,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Tom Banton": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Jos Buttler": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 116,
+        "average": 38.67,
+        "strikeRate": 156.75,
+        "highest": 52,
+        "recentScores": [
+          52,
+          31,
+          43,
+          37,
+          48
+        ],
+        "fours": 11,
+        "sixes": 7,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Kumar Kushagra": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 18,
+        "average": 18,
+        "strikeRate": 128.57,
+        "highest": 18,
+        "recentScores": [
+          18,
+          10,
+          18,
+          16,
+          18
+        ],
+        "fours": 3,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Sai Sudharsan": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 98,
+        "average": 32.67,
+        "strikeRate": 158.06,
+        "highest": 73,
+        "recentScores": [
+          47,
+          25,
+          37,
+          31,
+          42
+        ],
+        "fours": 13,
+        "sixes": 3,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "M Shahrukh Khan": {
+    "ipl": {
+      "matches": 58,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 163,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Jason Holder": {
+    "ipl": {
+      "matches": 46,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Glenn Phillips": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 42,
+        "average": 21,
+        "strikeRate": 140,
+        "highest": 25,
+        "recentScores": [
+          25,
+          13,
+          21,
+          19,
+          25
+        ],
+        "fours": 2,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Rashid Khan": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 24,
+        "average": 24,
+        "strikeRate": 141.17,
+        "highest": 24,
+        "recentScores": [
+          24,
+          16,
+          24,
+          22,
+          24
+        ],
+        "fours": 3,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 5,
+        "economy": 7.08,
+        "bestWickets": 173,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 17,
+        "strikeRate": 14.4
+      }
+    }
+  },
+  "Rahul Tewatia": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 24,
+        "average": 24,
+        "strikeRate": 141.17,
+        "highest": 12,
+        "recentScores": [
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fours": 2,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Washington Sundar": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 77,
+        "average": 25.67,
+        "strikeRate": 154,
+        "highest": 55,
+        "recentScores": [
+          40,
+          18,
+          30,
+          24,
+          35
+        ],
+        "fours": 9,
+        "sixes": 2,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 9.12,
+        "bestWickets": 271,
+        "recentWickets": [
+          1,
+          0,
+          1,
+          0,
+          2
+        ],
+        "average": 38,
+        "strikeRate": 25
+      }
+    }
+  },
+  "Mohammed Siraj": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 2,
+        "economy": 11.5,
+        "bestWickets": 481,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 57.5,
+        "strikeRate": 30
+      }
+    }
+  },
+  "Prasidh Krishna": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 6,
+        "economy": 10.33,
+        "bestWickets": 293,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 20.66,
+        "strikeRate": 12
+      }
+    }
+  },
+  "Kagiso Rabada": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 23,
+        "average": 0,
+        "strikeRate": 143.75,
+        "highest": 23,
+        "recentScores": [
+          22,
+          4,
+          12,
+          10,
+          17
+        ],
+        "fours": 1,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 3,
+        "economy": 9.81,
+        "bestWickets": 422,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 36,
+        "strikeRate": 22
+      }
+    }
+  },
+  "Sai Kishore": {
+    "ipl": {
+      "matches": 25,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Ishant Sharma": {
+    "ipl": {
+      "matches": 117,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Luke Wood": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Jayant Yadav": {
+    "ipl": {
+      "matches": 20,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Rishabh Pant": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 85,
+        "average": 42.5,
+        "strikeRate": 125,
+        "highest": 68,
+        "recentScores": [
+          53,
+          35,
+          43,
+          41,
+          48
+        ],
+        "fours": 11,
+        "sixes": 0,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Abdul Samad": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 54,
+        "average": 18,
+        "strikeRate": 131.7,
+        "highest": 36,
+        "recentScores": [
+          28,
+          10,
+          18,
+          16,
+          23
+        ],
+        "fours": 5,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Akshat Raghuwanshi": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 147,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Ayush Badoni": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 66,
+        "average": 22,
+        "strikeRate": 143.47,
+        "highest": 54,
+        "recentScores": [
+          32,
+          14,
+          22,
+          20,
+          27
+        ],
+        "fours": 8,
+        "sixes": 2,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Matthew Breetzke": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 147,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Josh Inglis": {
+    "ipl": {
+      "matches": 11,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 150,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Aiden Markram": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 78,
+        "average": 26,
+        "strikeRate": 156,
+        "highest": 45,
+        "recentScores": [
+          40,
+          18,
+          30,
+          24,
+          35
+        ],
+        "fours": 9,
+        "sixes": 4,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Nicholas Pooran": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 22,
+        "average": 7.33,
+        "strikeRate": 81.48,
+        "highest": 13,
+        "recentScores": [
+          13,
+          4,
+          12,
+          10,
+          13
+        ],
+        "fours": 1,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Wanindu Hasaranga": {
+    "ipl": {
+      "matches": 37,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Arshin Kulkarni": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 163,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Mitchell Marsh": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 64,
+        "average": 21.33,
+        "strikeRate": 125.49,
+        "highest": 35,
+        "recentScores": [
+          31,
+          13,
+          21,
+          19,
+          26
+        ],
+        "fours": 5,
+        "sixes": 4,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Shahbaz Ahmed": {
+    "ipl": {
+      "matches": 59,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Akash Singh": {
+    "ipl": {
+      "matches": 10,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Avesh Khan": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 1,
+        "average": 0,
+        "strikeRate": 33.33,
+        "highest": 1,
+        "recentScores": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 3,
+        "economy": 10,
+        "bestWickets": 362,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 26.66,
+        "strikeRate": 16
+      }
+    }
+  },
+  "Mohammed Shami": {
+    "ipl": {
+      "matches": 121,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Mohsin Khan": {
+    "ipl": {
+      "matches": 1,
+      "batting": null,
+      "bowling": {
+        "wickets": 1,
+        "economy": 4.75,
+        "bestWickets": 191,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 19,
+        "strikeRate": 24
+      }
+    }
+  },
+  "Anrich Nortje": {
+    "ipl": {
+      "matches": 49,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 133,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Prince Yadav": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 5,
+        "economy": 9.18,
+        "bestWickets": 202,
+        "recentWickets": [
+          3,
+          2,
+          3,
+          2,
+          4
+        ],
+        "average": 20.2,
+        "strikeRate": 13.2
+      }
+    }
+  },
+  "Digvesh Rathi": {
+    "ipl": {
+      "matches": 14,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Arjun Tendulkar": {
+    "ipl": {
+      "matches": 5,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Mayank Yadav": {
+    "ipl": {
+      "matches": 6,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Abishek Porel": {
+    "ipl": {
+      "matches": 31,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Ben Duckett": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 163,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "David Miller": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 62,
+        "average": 0,
+        "strikeRate": 163.15,
+        "highest": 41,
+        "recentScores": [
+          35,
+          13,
+          25,
+          19,
+          30
+        ],
+        "fours": 7,
+        "sixes": 3,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Karun Nair": {
+    "ipl": {
+      "matches": 84,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 147,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Pathum Nissanka": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 86,
+        "average": 28.67,
+        "strikeRate": 145.76,
+        "highest": 44,
+        "recentScores": [
+          39,
+          21,
+          29,
+          27,
+          34
+        ],
+        "fours": 12,
+        "sixes": 2,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "KL Rahul": {
+    "ipl": {
+      "matches": 148,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 160,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Nitish Rana": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 20,
+        "average": 6.67,
+        "strikeRate": 76.92,
+        "highest": 15,
+        "recentScores": [
+          15,
+          4,
+          12,
+          10,
+          15
+        ],
+        "fours": 3,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Sameer Rizvi": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 160,
+        "average": 80,
+        "strikeRate": 161.61,
+        "highest": 90,
+        "recentScores": [
+          90,
+          72,
+          84,
+          78,
+          89
+        ],
+        "fours": 12,
+        "sixes": 11,
+        "fifties": 2,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Prithvi Shaw": {
+    "ipl": {
+      "matches": 79,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 157,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Tristan Stubbs": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 49,
+        "average": 49,
+        "strikeRate": 116.66,
+        "highest": 39,
+        "recentScores": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fours": 3,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Axar Patel": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 2,
+        "average": 1,
+        "strikeRate": 50,
+        "highest": 2,
+        "recentScores": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 2,
+        "economy": 7.1,
+        "bestWickets": 171,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 35.5,
+        "strikeRate": 30
+      }
+    }
+  },
+  "Ashutosh Sharma": {
+    "ipl": {
+      "matches": 24,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 169,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Auqib Nabi": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Dushmantha Chameera": {
+    "ipl": {
+      "matches": 19,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Kyle Jamieson": {
+    "ipl": {
+      "matches": 13,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Kuldeep Yadav": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 1,
+        "average": 1,
+        "strikeRate": 100,
+        "highest": 1,
+        "recentScores": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fours": 0,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 3,
+        "economy": 9.45,
+        "bestWickets": 312,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 34.66,
+        "strikeRate": 22
+      }
+    }
+  },
+  "Mukesh Kumar": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 4,
+        "economy": 9.8,
+        "bestWickets": 262,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 24.5,
+        "strikeRate": 15
+      }
+    }
+  },
+  "T Natarajan": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 4,
+        "economy": 7.9,
+        "bestWickets": 293,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 21.75,
+        "strikeRate": 16.5
+      }
+    }
+  },
+  "Lungi Ngidi": {
+    "ipl": {
+      "matches": 19,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Vipraj Nigam": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 12,
+        "average": 12,
+        "strikeRate": 171.42,
+        "highest": 12,
+        "recentScores": [
+          12,
+          4,
+          12,
+          10,
+          12
+        ],
+        "fours": 2,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 1,
+        "economy": 11,
+        "bestWickets": 241,
+        "recentWickets": [
+          1,
+          0,
+          1,
+          0,
+          2
+        ],
+        "average": 55,
+        "strikeRate": 30
+      }
+    }
+  },
+  "Mitchell Starc": {
+    "ipl": {
+      "matches": 52,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Shreyas Iyer": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 68,
+        "average": 34,
+        "strikeRate": 170,
+        "highest": 50,
+        "recentScores": [
+          50,
+          26,
+          42,
+          32,
+          47
+        ],
+        "fours": 4,
+        "sixes": 5,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Priyansh Arya": {
+    "ipl": {
+      "matches": 2,
+      "batting": {
+        "runs": 46,
+        "average": 23,
+        "strikeRate": 242.1,
+        "highest": 39,
+        "recentScores": [
+          39,
+          15,
+          31,
+          21,
+          36
+        ],
+        "fours": 3,
+        "sixes": 5,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Mitchell Owen": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 157,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Prabhsimran Singh": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 80,
+        "average": 40,
+        "strikeRate": 137.93,
+        "highest": 43,
+        "recentScores": [
+          43,
+          32,
+          40,
+          38,
+          43
+        ],
+        "fours": 7,
+        "sixes": 5,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Nehal Wadhera": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 13,
+        "average": 6.5,
+        "strikeRate": 86.66,
+        "highest": 10,
+        "recentScores": [
+          10,
+          4,
+          10,
+          10,
+          10
+        ],
+        "fours": 0,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Azmatullah Omarzai": {
+    "ipl": {
+      "matches": 16,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Cooper Connolly": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 108,
+        "average": 108,
+        "strikeRate": 163.63,
+        "highest": 72,
+        "recentScores": [
+          72,
+          72,
+          72,
+          72,
+          72
+        ],
+        "fours": 11,
+        "sixes": 5,
+        "fifties": 1,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Marco Jansen": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 9,
+        "average": 9,
+        "strikeRate": 90,
+        "highest": 9,
+        "recentScores": [
+          9,
+          4,
+          9,
+          9,
+          9
+        ],
+        "fours": 0,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 2,
+        "economy": 7.87,
+        "bestWickets": 201,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 31.5,
+        "strikeRate": 24
+      }
+    }
+  },
+  "Musheer Khan": {
+    "ipl": {
+      "matches": 1,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 153,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Shashank Singh": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 18,
+        "average": 18,
+        "strikeRate": 163.63,
+        "highest": 14,
+        "recentScores": [
+          14,
+          10,
+          14,
+          14,
+          14
+        ],
+        "fours": 2,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Marcus Stoinis": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 9,
+        "average": 9,
+        "strikeRate": 180,
+        "highest": 9,
+        "recentScores": [
+          9,
+          4,
+          9,
+          9,
+          9
+        ],
+        "fours": 2,
+        "sixes": 0,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": null
+    }
+  },
+  "Arshdeep Singh": {
+    "ipl": {
+      "matches": 85,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Xavier Bartlett": {
+    "ipl": {
+      "matches": 3,
+      "batting": {
+        "runs": 11,
+        "average": 0,
+        "strikeRate": 220,
+        "highest": 11,
+        "recentScores": [
+          11,
+          4,
+          11,
+          10,
+          11
+        ],
+        "fours": 0,
+        "sixes": 1,
+        "fifties": 0,
+        "hundreds": 0
+      },
+      "bowling": {
+        "wickets": 3,
+        "economy": 9.62,
+        "bestWickets": 92,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 31,
+        "strikeRate": 19.33
+      }
+    }
+  },
+  "Yuzvendra Chahal": {
+    "ipl": {
+      "matches": 3,
+      "batting": null,
+      "bowling": {
+        "wickets": 3,
+        "economy": 7,
+        "bestWickets": 282,
+        "recentWickets": [
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "average": 16.33,
+        "strikeRate": 14
+      }
+    }
+  },
+  "Praveen Dubey": {
+    "ipl": {
+      "matches": 5,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Ben Dwarshuis": {
+    "ipl": {
+      "matches": 0,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Lockie Ferguson": {
+    "ipl": {
+      "matches": 49,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Harpreet Brar": {
+    "ipl": {
+      "matches": 49,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Vijaykumar Vyshak": {
+    "ipl": {
+      "matches": 19,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  },
+  "Yash Thakur": {
+    "ipl": {
+      "matches": 21,
+      "batting": {
+        "runs": 0,
+        "average": 24,
+        "strikeRate": 123,
+        "highest": 45,
+        "recentScores": [
+          42,
+          26,
+          36,
+          30,
+          45
+        ]
+      },
+      "bowling": null
+    }
+  }
+}

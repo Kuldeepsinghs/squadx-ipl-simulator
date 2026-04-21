@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>IPL Fantasy League</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <h1>IPL Fantasy League</h1>
+
+  <div class="app-shell">
+    <div class="card" id="draftCard">
+      <h2>Draft: Spin & Pick</h2>
+      <div id="gameStatus" class="small-text">Go to the Setup tab below, configure players, then come back here to spin.</div>
+      <div class="live-draft-strip">
+        <div id="turnOwnerBanner" class="live-pill">Waiting for setup...</div>
+        <div id="latestPickFeed" class="latest-pick-feed">No picks yet.</div>
+      </div>
+
+      <div class="draft-row">
+        <div class="wheel-container">
+          <div id="wheel"></div>
+          <button id="spinButton" class="wheel-inner-button" disabled>Spin</button>
+        </div>
+
+        <div class="draft-controls">
+          <div class="spin-info" id="spinInfo">Game not started yet. Use Setup tab first.</div>
+
+          <form id="pickForm" style="display:none;">
+            <label for="playerSelect">Select player from <span id="pickedTeamLabel" class="highlight"></span>:</label>
+            <input id="pickSearch" placeholder="Search by name or role (e.g. 'bat')" />
+            <select id="playerSelect" size="6" style="margin-top:8px"></select>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <button type="submit" id="addPickBtn">Add to Squad</button>
+              <button type="button" id="showTeamRemain" class="small-btn">Show team remaining</button>
+            </div>
+            <div id="pickMessage"></div>
+          </form>
+
+          <div id="modeRulesText" class="small-text" style="margin-top:6px">Rules: 12 players, team cap uses your setup value, max 4 foreign, each player unique globally.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Details & Tools
+        <span class="top-actions">
+          <button id="downloadBtn" disabled>Download Squads</button>
+        </span>
+      </h2>
+      <div id="bestSquad" class="small-text"></div>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="setup">Setup</button>
+        <button class="tab-btn" data-tab="squads">Squads</button>
+        <button class="tab-btn" data-tab="auction">Auction</button>
+        <button class="tab-btn" data-tab="sim">Match Simulator</button>
+        <button class="tab-btn" data-tab="stats">Stats</button>
+      </div>
+
+      <div id="tab-setup" class="tab-panel active">
+        <form id="setup-form">
+          <label for="gameModeSelect">Play mode:</label>
+          <select id="gameModeSelect">
+            <option value="spin">Spin Draft + Match Simulator</option>
+            <option value="auction">Live Auction + Match Simulator</option>
+          </select>
+          <label for="numPlayers">Number of players (2–8):</label>
+          <input type="number" id="numPlayers" min="2" max="8" value="2" required/>
+          <label for="playerNames" class="small-text">Player names (comma separated). If empty default names will be used.</label>
+          <textarea id="playerNames" rows="2" placeholder="Player 1, Player 2"></textarea>
+          <label for="maxPerTeamInput">Max players from one IPL team:</label>
+          <input type="number" id="maxPerTeamInput" min="1" max="12" value="2" required/>
+          <button type="submit">Start / Reset Game</button>
+        </form>
+        <div class="stats-import-panel">
+          <h3>Official IPL Sync</h3>
+          <div class="small-text">Run this app through the local Node server and sync player profiles from the official IPL team and player pages. No external API key is required.</div>
+          <div id="statsImportStatus" class="small-text stats-import-status"></div>
+          <div class="sim-row">
+            <button id="syncStatsBtn" type="button">Sync Next Batch</button>
+            <button id="testStatsApiBtn" type="button" class="small-btn">Load Cached Stats</button>
+            <button id="clearStatsBtn" type="button" class="small-btn">Clear Cached Stats</button>
+          </div>
+          <pre id="statsDebugOutput" class="small-text" style="display:none"></pre>
+        </div>
+        <div class="stats-import-panel">
+          <h3>Online Multiplayer (Beta)</h3>
+          <div class="small-text">Create a room on one device, share the room code, and let other players join from their own devices using Firebase.</div>
+          <div id="firebaseAuthStatus" class="small-text stats-import-status"></div>
+          <label for="onlinePlayerName">Your online name:</label>
+          <input type="text" id="onlinePlayerName" placeholder="Host or player name" maxlength="24" />
+          <label for="roomCodeInput">Room code:</label>
+          <input type="text" id="roomCodeInput" placeholder="ABC123" maxlength="8" />
+          <div class="sim-row">
+            <button id="createRoomBtn" type="button">Create Room</button>
+            <button id="joinRoomBtn" type="button" class="small-btn">Join Room</button>
+          </div>
+          <div id="onlineRoomStatus" class="small-text"></div>
+          <div id="onlineRoomMembers" class="small-text"></div>
+        </div>
+      </div>
+
+      <div id="tab-squads" class="tab-panel">
+        <div class="players-list" id="playersList"></div>
+      </div>
+
+      <div id="tab-auction" class="tab-panel">
+        <div class="auction-shell">
+          <div class="auction-main">
+            <div class="auction-header">
+              <div>
+                <h3>IPL Auction Arena</h3>
+                <div id="auctionStatusLine" class="small-text">Create teams in Setup, then initialize auction.</div>
+              </div>
+              <div class="auction-admin-actions">
+                <select id="auctionSetSelect" aria-label="Auction set">
+                  <option value="All Sets">All Sets</option>
+                  <option value="Marquee Players">Marquee Players</option>
+                  <option value="Wicketkeepers">Wicketkeepers</option>
+                  <option value="Capped Batsmen">Capped Batsmen</option>
+                  <option value="Capped Bowlers">Capped Bowlers</option>
+                  <option value="All-Rounders">All-Rounders</option>
+                  <option value="Uncapped Players">Uncapped Players</option>
+                </select>
+                <select id="auctionSetOrderSelect" aria-label="Auction set order">
+                  <option value="Marquee Players,Wicketkeepers,Capped Batsmen,Capped Bowlers,All-Rounders,Uncapped Players">Default Order</option>
+                  <option value="Marquee Players,All-Rounders,Wicketkeepers,Capped Batsmen,Capped Bowlers,Uncapped Players">All-Rounders Early</option>
+                  <option value="Wicketkeepers,Marquee Players,Capped Batsmen,All-Rounders,Capped Bowlers,Uncapped Players">WK First</option>
+                  <option value="Uncapped Players,Capped Bowlers,Capped Batsmen,Wicketkeepers,All-Rounders,Marquee Players">Reverse Order</option>
+                </select>
+                <button id="auctionNextSetBtn" type="button" class="small-btn">Load Next Set</button>
+                <button id="auctionInitBtn" type="button" class="small-btn">Initialize Auction</button>
+                <button id="auctionStartBtn" type="button" class="small-btn">Start</button>
+                <button id="auctionPauseBtn" type="button" class="small-btn">Pause</button>
+                <button id="auctionNextBtn" type="button" class="small-btn">Next Lot</button>
+                <button id="auctionEndBtn" type="button" class="small-btn">End Auction</button>
+              </div>
+            </div>
+
+            <div class="auction-current-card" id="auctionCurrentCard">
+              <div class="auction-player-hero">
+                <div id="auctionPlayerAvatar" class="auction-player-avatar">IPL</div>
+                <div>
+                  <div id="auctionSetBadge" class="auction-set-badge">Auction not started</div>
+                  <h4 id="auctionPlayerName">No current player</h4>
+                  <div id="auctionPlayerMeta" class="small-text">Current lot details will appear here.</div>
+                </div>
+              </div>
+              <div class="auction-bid-board">
+                <div class="auction-bid-stat">
+                  <span class="small-text">Base Price</span>
+                  <strong id="auctionBasePrice">-</strong>
+                </div>
+                <div class="auction-bid-stat">
+                  <span class="small-text">Highest Bid</span>
+                  <strong id="auctionCurrentBid">-</strong>
+                </div>
+                <div class="auction-bid-stat">
+                  <span class="small-text">Highest Bidder</span>
+                  <strong id="auctionHighestBidder">-</strong>
+                </div>
+                <div class="auction-bid-stat">
+                  <span class="small-text">Timer</span>
+                  <strong id="auctionTimer">00</strong>
+                </div>
+              </div>
+              <div class="auction-bid-actions">
+                <label class="auction-bid-as-label" for="auctionBidAsSelect">
+                  <span class="small-text">Bid as</span>
+                  <select id="auctionBidAsSelect" aria-label="Bid as team"></select>
+                </label>
+                <button id="auctionBidBtn" type="button">Place Next Bid</button>
+                <button id="auctionBid10Btn" type="button" class="small-btn">+10L</button>
+                <button id="auctionBid25Btn" type="button" class="small-btn">+25L</button>
+                <button id="auctionBid50Btn" type="button" class="small-btn">+50L</button>
+                <button id="auctionBid100Btn" type="button" class="small-btn">+1Cr</button>
+                <div id="auctionBidHint" class="small-text">Join from each device with the team name you control to bid live.</div>
+              </div>
+              <div id="auctionSaleBanner" class="auction-sale-banner" style="display:none"></div>
+              <div id="auctionPlayerProfile" class="auction-profile empty-state">Player profile appears when a lot is active.</div>
+            </div>
+
+            <div class="auction-panels">
+              <div class="auction-panel">
+                <h4>Bid History</h4>
+                <div id="auctionBidHistory" class="auction-list empty-state">No bids yet.</div>
+              </div>
+              <div class="auction-panel">
+                <h4>Sold / Unsold</h4>
+                <div id="auctionLotHistory" class="auction-list empty-state">Auction history will appear here.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="auction-side">
+            <div class="auction-panel">
+              <h4>Team Leaderboard</h4>
+              <div id="auctionLeaderboard" class="auction-list empty-state">Initialize auction to view teams.</div>
+            </div>
+            <div class="auction-panel">
+              <h4>Team Squads</h4>
+              <div id="auctionTeamsBoard" class="auction-list empty-state">Auction squads will appear here.</div>
+            </div>
+            <div class="auction-panel">
+              <h4>Live Presence</h4>
+              <div id="auctionPresence" class="auction-list empty-state">Join a room to see devices.</div>
+              <div class="sim-row">
+                <select id="hostTransferSelect"></select>
+                <button id="hostTransferBtn" type="button" class="small-btn">Transfer Host</button>
+              </div>
+            </div>
+            <div class="auction-panel">
+              <h4>Auction Chat</h4>
+              <div id="auctionChatList" class="auction-chat-list empty-state">No messages yet.</div>
+              <div class="sim-row">
+                <input id="auctionChatInput" type="text" placeholder="Message or reaction" maxlength="160" />
+                <button id="auctionChatSendBtn" type="button" class="small-btn">Send</button>
+              </div>
+              <div class="auction-reactions">
+                <button type="button" class="small-btn auction-reaction-btn" data-message="Steal!">Steal!</button>
+                <button type="button" class="small-btn auction-reaction-btn" data-message="Too much!">Too much!</button>
+                <button type="button" class="small-btn auction-reaction-btn" data-message="Need him!">Need him!</button>
+              </div>
+            </div>
+            <div class="auction-panel">
+              <h4>Trade Window</h4>
+              <div class="small-text">Swap one player from each team after or during the auction.</div>
+              <div class="trade-grid">
+                <select id="tradeTeamASelect"></select>
+                <select id="tradePlayerASelect"></select>
+                <select id="tradeTeamBSelect"></select>
+                <select id="tradePlayerBSelect"></select>
+              </div>
+              <button id="tradeSwapBtn" type="button" class="small-btn">Swap Players</button>
+              <div id="tradeStatus" class="small-text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-sim" class="tab-panel">
+        <div id="simSection">
+          <h3>Simulate Match Between Squads</h3>
+          <div class="small-text">If Playing XI + Impact is set, match uses those 12. Otherwise it uses full 12.</div>
+          <div class="sim-row">
+            <select id="teamASelect"></select>
+            <select id="teamBSelect"></select>
+            <button id="editTeamAXI" type="button" class="small-btn">Edit A XI+Impact</button>
+            <button id="editTeamBXI" type="button" class="small-btn">Edit B XI+Impact</button>
+            <button id="simulateBtn" disabled>Simulate Match</button>
+            <button id="clearScoreboards" class="small-btn" style="margin-left:8px">Clear Scoreboards</button>
+          </div>
+          <div class="sim-row">
+            <select id="tossCallerSelect" title="Who calls at toss?">
+              <option value="">Toss caller</option>
+            </select>
+            <select id="tossCallSelect" title="Heads or tails call">
+              <option value="heads">Call: Heads</option>
+              <option value="tails">Call: Tails</option>
+            </select>
+            <select id="tossDecisionSelect" title="Toss winner decision">
+              <option value="bat">Toss winner chooses: Bat</option>
+              <option value="bowl">Toss winner chooses: Bowl</option>
+            </select>
+            <select id="venueSelect" title="Venue for single match simulation">
+              <option value="">Venue: Auto (Random)</option>
+            </select>
+          </div>
+          <div id="tossResultLine" class="small-text"></div>
+          <div id="simResult"></div>
+
+          <hr style="border-color: rgba(31,41,55,0.8); margin:8px 0;" />
+          <h3>Mini League + Knockouts</h3>
+          <div class="small-text">League runs one match at a time. Click "Run League" once, then "Play Next Match" to progress.</div>
+          <button id="tournamentBtn" disabled>Run League + Knockouts</button>
+          <button id="playNextMatchBtn" class="small-btn" disabled>Play Next Match</button>
+          <div id="tournamentResult"></div>
+        </div>
+      </div>
+
+      <div id="tab-stats" class="tab-panel">
+        <h3>Season Analytics</h3>
+        <div class="small-text">Updated after each simulated match and tournament game.</div>
+        <div id="statsDashboard"></div>
+        <div id="rivalryBoard"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TEAM REMAINING MODAL -->
+  <div id="teamModal" style="display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.6);align-items:center;justify-content:center;z-index:9999">
+    <div style="width:520px;max-width:96%;background:#071025;border-radius:10px;padding:12px;border:1px solid rgba(148,163,184,.06)">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3 id="modalTitle" style="margin:0;color:#fff">Team - remaining players</h3>
+        <button id="closeModal" style="background:transparent;border:1px solid rgba(255,255,255,.06);color:#fff;padding:6px 8px;border-radius:6px">Close</button>
+      </div>
+      <div id="modalWarn" class="modal-warning" style="display:none"></div>
+      <div style="margin-top:8px;display:flex;gap:8px">
+        <input id="modalSearch" placeholder="Filter players..." style="flex:1;padding:7px;border-radius:8px;background:#020617;color:#fff;border:1px solid rgba(148,163,184,.08)"/>
+        <div id="modalCount" class="small-text" style="align-self:center;color:#9ca3af"></div>
+      </div>
+      <div id="modalList" style="max-height:320px;overflow:auto;margin-top:8px;padding:6px;background:rgba(255,255,255,.02);border-radius:8px"></div>
+    </div>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+
+
