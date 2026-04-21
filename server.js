@@ -104,10 +104,13 @@ await page.setViewportSize({ width: 1280, height: 800 });
       timeout: 60000
     });//new
     return await task(page);
-    
-  } finally {
-    await browser.close();
+  } catch (err) {
+    console.error("SCRAPE ERROR:", err);  // 👈 THIS IS KEY
+    throw err;
   }
+  // finally {
+  //   await browser.close();
+  // }
 }
 //end of withBrowserPage
 
