@@ -1,14 +1,7 @@
 const http = require("http");
 const fs = require("fs/promises");
 const path = require("path");
-// const { chromium } = require("playwright-core");
-
-// ✅ Use ONLY playwright (works both local + Render)
-const { chromium } = require("playwright");
-
-// (optional safe fallback for fetch)
-const fetch = global.fetch || require("node-fetch");
-
+const { chromium } = require("playwright-core");
 
 const PORT = Number(process.env.PORT) || 3000;
 const ROOT = __dirname;
@@ -53,66 +46,22 @@ async function detectBrowserExecutable() {
   throw new Error("Could not find a local Chromium-based browser to automate.");
 }
 
-// async function withBrowserPage(task) {
-//   const executablePath = await detectBrowserExecutable();
-//   const browser = await chromium.launch({
-//     executablePath,
-//     headless: true
-//   });
-//   try {
-//     const page = await browser.newPage({
-//       userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
-//     });
-//     await page.goto("about:blank");
-//     return await task(page);
-//   } finally {
-//     await browser.close();
-//   }
-// }
-
 async function withBrowserPage(task) {
-  let browser;
-
-  if (process.env.RENDER) {
-    // Render (Linux server)
-    browser = await chromium.launch({
-      headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"]
-    });
-  } else {
-    // Local (your current Windows logic)
-    const executablePath = await detectBrowserExecutable();
-    browser = await chromium.launch({
-      executablePath,
-      headless: true
-    });
-  }
-
+  const executablePath = await detectBrowserExecutable();
+  const browser = await chromium.launch({
+    executablePath,
+    headless: true
+  });
   try {
     const page = await browser.newPage({
       userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
     });
-    //from here
-    await page.setExtraHTTPHeaders({
-      "Accept-Language": "en-US,en;q=0.9"
-    });//new
-
-await page.setViewportSize({ width: 1280, height: 800 });
-    // await page.goto("about:blank");
-    await page.goto(url, {
-      waitUntil: "domcontentloaded",
-      timeout: 60000
-    });//new
+    await page.goto("about:blank");
     return await task(page);
-  } catch (err) {
-    console.error("SCRAPE ERROR:", err);  // 👈 THIS IS KEY
-    throw err;
+  } finally {
+    await browser.close();
   }
-  // finally {
-  //   await browser.close();
-  // }
 }
-//end of withBrowserPage
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, { "Content-Type": "application/json; charset=utf-8" });

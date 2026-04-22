@@ -897,6 +897,7 @@ function clamp(value, min, max){
         renderOnlineRoomState();
       });
     }
+
     function toggleCollapsibleFromClick(event){
       const header = event.target.closest(".collapsible");
       if(!header) return;
@@ -905,8 +906,12 @@ function clamp(value, min, max){
       const panelCandidates = Array.from(block.children).filter(child => child !== header && child.tagName === "DIV");
       const panel = panelCandidates[panelCandidates.length - 1];
       if(!panel) return;
-      panel.style.display = panel.style.display === "none" ? "" : "none";
+      if(panel.style.display === "none"){
+        panel.style.display = "";
+        syncRoomGameState("scoreboard-open");
+      }
     }
+
     function getStoredApiCount(){
       return Object.keys(importedPlayerStats || {}).length;
     }
@@ -4269,9 +4274,14 @@ function clamp(value, min, max){
         }
       } else {
         secondTargetScore = Math.max(0, Math.min(firstFinalScore, secondProjectedRaw));
-        if(firstFinalScore - secondTargetScore <= 3 && Math.random() < 0.015){
-          secondTargetScore = firstFinalScore; // occasional tie finish
+        if(firstFinalScore - secondTargetScore <= 2 && Math.random() < 0.01){
+          secondTargetScore = firstFinalScore;
         }
+      }
+      
+      if(secondTargetScore === firstFinalScore && Math.random() >= 0.1){
+        const nudge = Math.random() < 0.5 ? -1 : 1;
+        secondTargetScore = Math.max(0, Math.min(285, secondTargetScore + nudge));
       }
       const chaseWon = secondTargetScore > firstFinalScore;
       const secondBattingEntries = firstIsA ? battingEntriesB : battingEntriesA;
