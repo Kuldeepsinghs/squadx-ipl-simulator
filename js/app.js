@@ -511,6 +511,8 @@ function clamp(value, min, max){
     const auctionPlayerProfile = document.getElementById("auctionPlayerProfile");
     const auctionBidHistory = document.getElementById("auctionBidHistory");
     const auctionLotHistory = document.getElementById("auctionLotHistory");
+    const auctionUnsoldSelect = document.getElementById("auctionUnsoldSelect");
+    const auctionRebidBtn = document.getElementById("auctionRebidBtn");
     const auctionLeaderboard = document.getElementById("auctionLeaderboard");
     const auctionTeamsBoard = document.getElementById("auctionTeamsBoard");
     const auctionPresence = document.getElementById("auctionPresence");
@@ -525,6 +527,7 @@ function clamp(value, min, max){
     const tradePlayerBSelect = document.getElementById("tradePlayerBSelect");
     const tradeSwapBtn = document.getElementById("tradeSwapBtn");
     const tradeStatus = document.getElementById("tradeStatus");
+    let promptedTradeRequestId = "";
 
     const tabButtons = document.querySelectorAll(".tab-btn");
     const tabPanels = {
@@ -1329,9 +1332,68 @@ function clamp(value, min, max){
         bidHistory: [],
         soldLots: previousState && Array.isArray(previousState.soldLots) ? previousState.soldLots : [],
         unsoldLots: previousState && Array.isArray(previousState.unsoldLots) ? previousState.unsoldLots : [],
+        pendingTrade: previousState && previousState.pendingTrade ? previousState.pendingTrade : null,
         endAt: 0,
         timerSeconds: 55
       };
+    }
+    function findAuctionLotByName(playerName){
+      const name = String(playerName || "");
+      if(!name) return null;
+      const allLots = buildAuctionLots("All Sets", new Set());
+      return allLots.find(lot=>lot.name === name) || null;
+    }
+    function normalizeUnsoldLot(lot){
+      if(!lot || !lot.name) return null;
+      const fullLot = lot.role && lot.roleBucket && lot.team ? lot : findAuctionLotByName(lot.name);
+      if(!fullLot) return null;
+      return {
+        id: fullLot.id || `${fullLot.team || "UNSOLD"}-${fullLot.name}`.replace(/\s+/g, "-"),
+        name: fullLot.name,
+        role: fullLot.role,
+        roleBucket: fullLot.roleBucket || getAuctionRoleBucket(fullLot.role),
+        capped: !!fullLot.capped,
+        basePrice: Number(lot.basePrice || fullLot.basePrice) || 20,
+        setType: fullLot.setType || "Unsold Players",
+        team: fullLot.team,
+        isOverseas: !!fullLot.isOverseas,
+        rebid: true
+      };
+    }
+    function getAvailableUnsoldLots(){
+      const squadNames = new Set();
+      (players || []).forEach(team=>{
+        (team.squad || []).forEach(player=>{
+          if(player && (player.playerName || player.name)) squadNames.add(player.playerName || player.name);
+        });
+      });
+      return (auctionState && Array.isArray(auctionState.unsoldLots) ? auctionState.unsoldLots : [])
+        .map(normalizeUnsoldLot)
+        .filter(lot=>lot && !squadNames.has(lot.name));
+    }
+    function startUnsoldRebid(){
+      if(!auctionState || !canCurrentDeviceControlAuctionAdmin()) return;
+      const selectedName = auctionUnsoldSelect ? auctionUnsoldSelect.value : "";
+      const lot = getAvailableUnsoldLots().find(item=>item.name === selectedName);
+      if(!lot){
+        if(auctionStatusLine) auctionStatusLine.textContent = "Choose an unsold player to rebid.";
+        return;
+      }
+      if(auctionSaleTimeout){
+        window.clearTimeout(auctionSaleTimeout);
+        auctionSaleTimeout = null;
+      }
+      auctionState.unsoldLots = (auctionState.unsoldLots || []).filter(item=>item && item.name !== lot.name);
+      auctionState.currentLot = lot;
+      auctionState.currentBid = 0;
+      auctionState.highestBidder = "";
+      auctionState.highestBidderUid = "";
+      auctionState.bidHistory = [];
+      auctionState.saleMessage = "";
+      auctionState.endAt = Date.now() + ((auctionState.timerSeconds || 55) * 1000);
+      auctionState.status = "running";
+      renderAuctionState();
+      syncRoomGameState("auction-unsold-rebid");
     }
     function startAuctionTimerLoop(){
       if(auctionTimerInterval) return;
@@ -1392,9 +1454,17 @@ function clamp(value, min, max){
           saleMessage = `SOLD: ${lot.name} to ${team.name} for ${formatAuctionPrice(auctionState.currentBid)}.`;
         }
       } else {
+        auctionState.unsoldLots = (auctionState.unsoldLots || []).filter(item=>item && item.name !== lot.name);
         auctionState.unsoldLots.push({
+          id: lot.id,
           name: lot.name,
+          role: lot.role,
+          roleBucket: lot.roleBucket,
+          capped: !!lot.capped,
           basePrice: lot.basePrice,
+          setType: lot.setType,
+          team: lot.team,
+          isOverseas: !!lot.isOverseas,
           reason
         });
       }
@@ -1474,6 +1544,8 @@ function clamp(value, min, max){
         if(auctionTimer) auctionTimer.textContent = "00";
         if(auctionBidHistory) auctionBidHistory.innerHTML = '<div class="empty-state">No bids yet.</div>';
         if(auctionLotHistory) auctionLotHistory.innerHTML = '<div class="empty-state">Auction history will appear here.</div>';
+        if(auctionUnsoldSelect) auctionUnsoldSelect.innerHTML = '<option value="">No unsold players</option>';
+        if(auctionRebidBtn) auctionRebidBtn.disabled = true;
         if(auctionLeaderboard) auctionLeaderboard.innerHTML = '<div class="empty-state">Initialize auction to view teams.</div>';
         if(auctionTeamsBoard) auctionTeamsBoard.innerHTML = '<div class="empty-state">Auction squads will appear here.</div>';
         if(auctionBidBtn) auctionBidBtn.disabled = true;
@@ -1502,7 +1574,9 @@ function clamp(value, min, max){
         }
       }
       auctionStatusLine.textContent = lot
-        ? `Status: ${auctionState.status}. ${auctionState.selectedSet || "All Sets"} lot ${Math.max(1, auctionState.currentIndex + 1)} of ${(auctionState.lots || []).length}.`
+        ? (lot.rebid
+          ? `Status: ${auctionState.status}. Unsold rebid: ${lot.name}.`
+          : `Status: ${auctionState.status}. ${auctionState.selectedSet || "All Sets"} lot ${Math.max(1, auctionState.currentIndex + 1)} of ${(auctionState.lots || []).length}.`)
         : `Status: ${auctionState.status}. Sold ${auctionState.soldLots.length}, Unsold ${auctionState.unsoldLots.length}.`;
       if(auctionPlayerAvatar) auctionPlayerAvatar.textContent = lot ? getAuctionAvatar(lot.name) : "DONE";
       if(auctionSetBadge) auctionSetBadge.textContent = lot ? lot.setType : "Auction complete";
@@ -1562,6 +1636,32 @@ function clamp(value, min, max){
             auctionLotHistory.appendChild(row);
           });
         }
+      }
+      if(auctionUnsoldSelect){
+        const previousUnsold = auctionUnsoldSelect.value;
+        const unsoldLots = getAvailableUnsoldLots();
+        auctionUnsoldSelect.innerHTML = "";
+        if(unsoldLots.length === 0){
+          const opt = document.createElement("option");
+          opt.value = "";
+          opt.textContent = "No unsold players";
+          auctionUnsoldSelect.appendChild(opt);
+        } else {
+          unsoldLots.forEach(item=>{
+            const opt = document.createElement("option");
+            opt.value = item.name;
+            opt.textContent = `${item.name} (${formatRole(item.role)} | ${formatAuctionPrice(item.basePrice)})`;
+            auctionUnsoldSelect.appendChild(opt);
+          });
+          if(Array.from(auctionUnsoldSelect.options).some(opt=>opt.value === previousUnsold)) auctionUnsoldSelect.value = previousUnsold;
+        }
+      }
+      if(auctionRebidBtn){
+        const canRebid = canCurrentDeviceControlAuctionAdmin()
+          && getAvailableUnsoldLots().length > 0
+          && auctionState.status !== "running"
+          && auctionState.status !== "sold-animation";
+        auctionRebidBtn.disabled = !canRebid;
       }
       const sortedTeams = (players || []).slice().sort((a, b)=>{
         const sizeDiff = (b.squad || []).length - (a.squad || []).length;
@@ -1636,14 +1736,86 @@ function clamp(value, min, max){
       if(!tradeTeamBSelect.value && players[1]) tradeTeamBSelect.value = "1";
       fillTradePlayerSelect(tradeTeamASelect, tradePlayerASelect);
       fillTradePlayerSelect(tradeTeamBSelect, tradePlayerBSelect);
-      if(tradeSwapBtn) tradeSwapBtn.disabled = !canCurrentDeviceControlAuctionAdmin() || !players || players.length < 2;
+      const idxA = parseInt(tradeTeamASelect.value, 10);
+      const hasPendingTrade = !!(auctionState && auctionState.pendingTrade);
+      if(tradeSwapBtn){
+        tradeSwapBtn.disabled = !canCurrentDeviceRequestTrade(idxA) || !players || players.length < 2 || hasPendingTrade;
+        tradeSwapBtn.textContent = hasPendingTrade ? "Trade Pending" : "Request Trade";
+      }
+      if(tradeStatus && hasPendingTrade){
+        const request = auctionState.pendingTrade;
+        tradeStatus.textContent = `${request.fromTeam} offered ${request.fromPlayer} for ${request.toTeam}'s ${request.toPlayer}. Waiting for acceptance.`;
+      }
+      maybePromptTradeAcceptance();
+    }
+    function getTradeControlledTeam(){
+      if(!players || !Array.isArray(players)) return null;
+      const viewerUid = getCurrentGuestUser() && getCurrentGuestUser().uid;
+      const identityName = getOnlineIdentityName().toLowerCase();
+      return players.find(team=>{
+        if(viewerUid && team.ownerUid && team.ownerUid === viewerUid) return true;
+        return identityName && team.name && team.name.toLowerCase() === identityName;
+      }) || null;
+    }
+    function canCurrentDeviceRequestTrade(teamIndex){
+      if(!currentRoomId) return true;
+      if(isCurrentUserHost()) return true;
+      const controlledTeam = getTradeControlledTeam();
+      return !!(controlledTeam && players[teamIndex] && controlledTeam.name === players[teamIndex].name);
+    }
+    function canCurrentDeviceAcceptTrade(request){
+      if(!request) return false;
+      if(!currentRoomId) return true;
+      const controlledTeam = getTradeControlledTeam();
+      return !!(controlledTeam && controlledTeam.name === request.toTeam);
+    }
+    function applyTradeRequest(request){
+      if(!request) return false;
+      const teamA = (players || []).find(team=>team && team.name === request.fromTeam);
+      const teamB = (players || []).find(team=>team && team.name === request.toTeam);
+      if(!teamA || !teamB) return false;
+      const squadA = teamA.squad || [];
+      const squadB = teamB.squad || [];
+      const playerAIdx = squadA.findIndex(player=>(player.playerName || player.name) === request.fromPlayer);
+      const playerBIdx = squadB.findIndex(player=>(player.playerName || player.name) === request.toPlayer);
+      if(playerAIdx < 0 || playerBIdx < 0) return false;
+      const a = squadA[playerAIdx];
+      const b = squadB[playerBIdx];
+      squadA[playerAIdx] = b;
+      squadB[playerBIdx] = a;
+      teamA.playing = null;
+      teamB.playing = null;
+      if(auctionState) auctionState.pendingTrade = null;
+      if(tradeStatus) tradeStatus.textContent = `${a.playerName || a.name} swapped with ${b.playerName || b.name}.`;
+      renderPlayers();
+      renderAuctionState();
+      populateSimSelects();
+      syncRoomGameState("trade-accepted");
+      return true;
+    }
+    function maybePromptTradeAcceptance(){
+      const request = auctionState && auctionState.pendingTrade;
+      if(!request || request.id === promptedTradeRequestId || !canCurrentDeviceAcceptTrade(request)) return;
+      promptedTradeRequestId = request.id;
+      window.setTimeout(()=>{
+        if(!auctionState || !auctionState.pendingTrade || auctionState.pendingTrade.id !== request.id) return;
+        const accepted = window.confirm(`${request.fromTeam} wants to trade ${request.fromPlayer} for your ${request.toPlayer}. Accept trade?`);
+        if(accepted){
+          applyTradeRequest(request);
+        } else {
+          auctionState.pendingTrade = null;
+          if(tradeStatus) tradeStatus.textContent = "Trade request declined.";
+          renderAuctionState();
+          syncRoomGameState("trade-declined");
+        }
+      }, 50);
     }
     function swapTradePlayers(){
-      if(!canCurrentDeviceControlAuctionAdmin()) return;
       const idxA = parseInt(tradeTeamASelect.value, 10);
       const idxB = parseInt(tradeTeamBSelect.value, 10);
       const playerAIdx = parseInt(tradePlayerASelect.value, 10);
       const playerBIdx = parseInt(tradePlayerBSelect.value, 10);
+      if(!canCurrentDeviceRequestTrade(idxA)) return;
       if(!players[idxA] || !players[idxB] || idxA === idxB){
         if(tradeStatus) tradeStatus.textContent = "Choose two different teams.";
         return;
@@ -1656,15 +1828,31 @@ function clamp(value, min, max){
       }
       const a = squadA[playerAIdx];
       const b = squadB[playerBIdx];
-      squadA[playerAIdx] = b;
-      squadB[playerBIdx] = a;
-      players[idxA].playing = null;
-      players[idxB].playing = null;
-      if(tradeStatus) tradeStatus.textContent = `${a.playerName || a.name} swapped with ${b.playerName || b.name}.`;
-      renderPlayers();
+      const request = {
+        id: `trade-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        fromTeam: players[idxA].name,
+        toTeam: players[idxB].name,
+        fromPlayer: a.playerName || a.name,
+        toPlayer: b.playerName || b.name,
+        requestedAt: new Date().toISOString()
+      };
+      if(!currentRoomId){
+        if(window.confirm(`${request.toTeam}, accept trade: ${request.fromPlayer} for ${request.toPlayer}?`)){
+          applyTradeRequest(request);
+        } else if(tradeStatus){
+          tradeStatus.textContent = "Trade request declined.";
+        }
+        return;
+      }
+      if(!auctionState){
+        if(tradeStatus) tradeStatus.textContent = "Initialize auction before sending trade requests.";
+        return;
+      }
+      auctionState.pendingTrade = request;
+      promptedTradeRequestId = "";
+      if(tradeStatus) tradeStatus.textContent = `Trade request sent to ${request.toTeam}.`;
       renderAuctionState();
-      populateSimSelects();
-      syncRoomGameState("trade-swap");
+      syncRoomGameState("trade-request");
     }
     function updateBestSquadSummary(){ if(!players||players.length===0){ bestSquadEl.textContent=""; return; } let best=null, bestScore=-Infinity; players.forEach(p=>{ if(!p.squad||p.squad.length===0) return; const eff=getEffectiveSquad(p); const sc=getSquadStrength(eff); if(sc>bestScore){bestScore=sc;best=p.name;} }); if(!best) bestSquadEl.textContent="No squads rated yet."; else bestSquadEl.textContent=`Current best ${isAuctionMode() ? "auction squad" : "squad"} (based on XI if set): ${best} (${bestScore} pts)`; }
 
@@ -1999,6 +2187,9 @@ function clamp(value, min, max){
     }
     if(auctionBidBtn){
       auctionBidBtn.addEventListener("click", ()=> placeAuctionBid());
+    }
+    if(auctionRebidBtn){
+      auctionRebidBtn.addEventListener("click", ()=>startUnsoldRebid());
     }
     if(auctionBidAsSelect){
       auctionBidAsSelect.addEventListener("change", ()=>renderAuctionState());

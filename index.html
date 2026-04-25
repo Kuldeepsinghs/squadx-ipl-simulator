@@ -190,6 +190,10 @@
               <div class="auction-panel">
                 <h4>Sold / Unsold</h4>
                 <div id="auctionLotHistory" class="auction-list empty-state">Auction history will appear here.</div>
+                <div class="sim-row">
+                  <select id="auctionUnsoldSelect" aria-label="Unsold player"></select>
+                  <button id="auctionRebidBtn" type="button" class="small-btn">Rebid Unsold</button>
+                </div>
               </div>
             </div>
           </div>
@@ -233,7 +237,7 @@
                 <select id="tradeTeamBSelect"></select>
                 <select id="tradePlayerBSelect"></select>
               </div>
-              <button id="tradeSwapBtn" type="button" class="small-btn">Swap Players</button>
+              <button id="tradeSwapBtn" type="button" class="small-btn">Request Trade</button>
               <div id="tradeStatus" class="small-text"></div>
             </div>
           </div>
